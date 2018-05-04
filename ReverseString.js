@@ -6,7 +6,7 @@
 		return s.split('').reverse().join('');
 	}
 	
-	console.log(reverse('horseshoe');
+	console.log(reverse('horseshoe'));
 	
 	//Simple string concatenation, performs well on most browsers
 	function reverse(s) {
@@ -16,7 +16,7 @@
 		return o;
 	}
 	
-	console.log(reverse('horseshoe');
+	console.log(reverse('horseshoe'));
 	
 	//Using recursion
 	function reverse(s) {
@@ -27,4 +27,4 @@
 			reverse(s.substr(0, halfIndex));
 	}
 	
-	console.log(reverse('horseshoe');
+	console.log(reverse('horseshoe'));
