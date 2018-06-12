@@ -8,19 +8,17 @@
 */
 var findmaxrepeatchar = (inputstr) => {
     if (inputstr && inputstr.length > 1) {
-        let len = inputstr.length,
-            chararr = inputstr.split(''),
+        let chararr = inputstr.split(''),
             chartotals = [],
             maxchar = null,
             maxcount = 0;
 
-        for (let i = 0; i < len; i++) {
-            let currchar = chararr[i];
-            chartotals[currchar] = (chartotals[currchar]) ? chartotals[currchar] + 1 : 1;
+        for (let char of chararr) {
+            chartotals[char] = (chartotals[char]) ? chartotals[char] + 1 : 1;
 
-            if (chartotals[currchar] > maxcount) {
-                maxcount = chartotals[currchar];
-                maxchar = currchar;
+            if (chartotals[char] > maxcount) {
+                maxcount = chartotals[char];
+                maxchar = char;
             }
         }
 
