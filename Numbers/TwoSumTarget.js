@@ -24,7 +24,7 @@ var twoSum = function(nums, target) {
   }  
 };
 
-console.log(twoSum([4, 8, 12, 25, 7, 11], 19);
+console.log(twoSum([4, 8, 12, 25, 7, 11], 19));
 /*
 Complexity Analysis:
 
