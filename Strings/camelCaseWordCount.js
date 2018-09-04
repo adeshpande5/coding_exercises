@@ -40,7 +40,7 @@ function camelCaseWordCount(s) {
   return matches.length + 1;  
   */
 
-  var mod = s.replace(/(?<!^)([A-Z][a-z]|(?<=[a-z])[A-Z])/g, ' $1').split(' ');
+  const mod = s.replace(/(?<!^)([A-Z][a-z]|(?<=[a-z])[A-Z])/g, ' $1').split(' ');
   
   return mod.length;
 }
